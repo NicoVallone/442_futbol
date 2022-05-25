@@ -14,7 +14,6 @@
 * {
     margin: 0;
     padding: 0;
-    color: var(--primary-color);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
 }
 
@@ -23,7 +22,7 @@ html{
 }
 
 .body {
-    background-color: var(--back-color)
+    background-color: var(--back-color);
 }
 
 main{
@@ -35,8 +34,8 @@ main{
 .afterimage{
     height: 700px;
     display: block;
+    color: var(--primary-color);
 }
-
 
 
 /*----------HEADER-------------*/ 
@@ -70,11 +69,19 @@ main{
     display: inline;
     padding: 10px;
     font-size: inherit;
-    transition: all .1s ease-in-out;
 }
 
-nav ul li a:hover {
-    color: var(--secondary-color);
+.navegador__lista__item a {
+    color: var(--primary-color);
+}
+
+
+.navegador__lista__item a:hover {
+    color: var(--secondary-color) !important;
+    border-bottom-color: var(--secondary-color);
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    padding-bottom: 0rem;
 }
 
 .logo {
@@ -112,6 +119,7 @@ nav ul li a:hover {
     justify-content: space-between;
     margin: 20px;
     font-size: var(--small-text);
+    color: var(--primary-color);
     
 }
 
@@ -128,6 +136,20 @@ nav ul li a:hover {
     align-items: flex-end;
     gap: 0.5rem
 }
+
+.footer__redes a {
+    border-bottom-color: black;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    padding-bottom: 0rem;
+}
+
+.footer__redes a:hover {
+    border-bottom-color: var(--secondary-color);
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    padding-bottom: 0rem;
+}   
 
 /*----------FIN FOOTER-------------*/ 
 
@@ -150,6 +172,7 @@ nav ul li a:hover {
     align-items: flex-start;
     gap: 1rem;
     margin-bottom: 3rem;
+    color: var(--primary-color);
 }
 
 .cuerpo__frase__title{
@@ -166,10 +189,23 @@ nav ul li a:hover {
     flex-direction: column;
     align-items: center;
     font-size: var(--medium-text);
+    color: var(--primary-color);
+
+}
+
+.cuerpo__seccion img:hover {
+    border-color: var(--secondary-color);
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 127px;
 }
 
 .imagen {
     width: 250px;
+    border-color: var(--back-color);
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 127px;
 }
 
 .cuerpo {
@@ -224,6 +260,7 @@ nav ul li a:hover {
 }
 .title__sedes{
     font-size: var(--large-text);
+    color: var(--primary-color);
 }
 
 
@@ -238,6 +275,7 @@ nav ul li a:hover {
     gap: 2rem;
     margin-top: 3rem;
     margin-bottom: 3rem;
+    color: var(--primary-color);
 }
 #capital{
     grid-area: capital;
@@ -356,10 +394,12 @@ nav ul li a:hover {
 .pasos{
     margin-top: 50px;
     margin-left: 10px;
+    color: var(--primary-color);
 }
 
 .pasos__headline{
     margin-bottom: 5px;
+    color: var(--primary-color);
 }
 
 /*----------FIN QUIERO JUGAR-------------*/ 
@@ -382,6 +422,7 @@ nav ul li a:hover {
     "posiciones goleadores"
     "fixture fixture";
     gap: 2rem;
+    color: var(--primary-color);
 }
 
 #titulo{
@@ -509,14 +550,17 @@ nav ul li a:hover {
     margin-top: 30px;
     margin-left: 550px;
     margin-bottom: 50px;
+    color: var(--primary-color);
 }
 
 .formulario__botones {
     color: black;
     width: 240px;
+    color: var(--primary-color);
 }
 .formulario__texto{
     margin-top: 15px;
+    color: var(--primary-color);
 }
 
 
