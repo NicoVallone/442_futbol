@@ -73,8 +73,7 @@ main{
     transition: all .1s ease-in-out;
 }
 
-
-.navegador__lista__item:hover {
+nav ul li a:hover {
     color: var(--secondary-color);
 }
 
