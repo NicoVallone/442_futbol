@@ -413,6 +413,10 @@ main{
     background-position: center;
 }
 
+#torneo__estadisticas{
+    color: var(--primary-color);
+}
+
 .afterimage__torneo{
     display: grid;
     grid-template-columns: 1fr 1fr;
