@@ -190,6 +190,7 @@ main{
     align-items: center;
     font-size: var(--medium-text);
     color: var(--primary-color);
+    padding-top: 3.5rem;
 
 }
 
@@ -208,7 +209,7 @@ main{
     border-radius: 127px;
 }
 
-.cuerpo {
+/* .cuerpo {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 15rem 1fr;
@@ -217,9 +218,9 @@ main{
     "sedes torneo quierojugar";
     gap: 5rem;
     margin-bottom: 8rem;
-}
+} */
 
-#frase{
+/* #frase{
     grid-area: frase;
 }
 
@@ -233,7 +234,9 @@ main{
 
 #quierojugar{
     grid-area: quierojugar;
-}
+} */
+
+
 
 @media screen and (max-width: 900px) {
     .cuerpo {
@@ -244,8 +247,12 @@ main{
        "sedes"
        "torneo"
        "quierojugar";
-    }    
+    }
+    .imagen{
+        width: 200px;
+    }
 }
+
 
 
 /*----------FIN INICIO-------------*/ 

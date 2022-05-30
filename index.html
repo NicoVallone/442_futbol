@@ -14,7 +14,33 @@
     <header class="header">
             <img src="./img/SvgjsG1850.svg" alt="logo" class="logo">
             <img src="./img/Line 2.svg" alt="Line" class="line">
-            <nav class="navegador">
+            <nav class="navbar navbar-expand-lg text-light container-md" id="navbar">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse justify-content-end" id="navbarText">
+                    <ul class="navbar-nav ml-auto mb-2 mb-lg-0 text-light">
+                      <li class="nav-item text-light">
+                        <a class="nav-link active" aria-current="page" href="./index.html">INICIO</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./pages/sedes.html">SEDES</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./pages/quiero_jugar.html">QUIERO JUGAR</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./pages/torneo.html">TORNEO</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./pages/contactanos.html">CONTACTANOS</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </nav>
+            <!-- <nav class="navegador">
                 <ul class="navegador__lista">
                     <li class="navegador__lista__item"><a href="./index.html">INICIO</a></li>
                     <li class="navegador__lista__item"><a href="./pages/sedes.html">SEDES</a></li>
@@ -22,14 +48,12 @@
                     <li class="navegador__lista__item"><a href="./pages/quiero_jugar.html">QUIERO JUGAR</a></li>
                     <li class="navegador__lista__item"><a href="./pages/contactanos.html">CONTACTANOS</a></li>
                 </ul>
-            </nav>
+            </nav> -->
     </header>
 </section>
-<main>
-    <section>
-    </section>
-    <div class="cuerpo">
-        <article class="cuerpo__frase" id="frase">
+<main class="container-md">
+    <div class="cuerpo row justify-content-center">
+        <article class="cuerpo__frase col-12" id="frase">
             <h2 class="cuerpo__frase__title">
                 ¿Quiénes somos?
             </h2>
@@ -38,15 +62,61 @@
                 ¿Estás listo?
             </p> 
         </article>
-        <div class="cuerpo__seccion" id="sedes">
+        <div id="carouselExampleCaptions" class="carousel slide col-10" data-bs-ride="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./img/carrousel-abigail-keenan-8-s5QuUBtyM-unsplash.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Las mejores canchas</h5>
+                  <p>Podés elegir tu sede y horario de preferencia.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./img/carrousel-jeffrey-f-lin-GLKM5guF69Y-unsplash.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Futbol femenino</h5>
+                  <p>Nuestros torneo femenino sigue creciendo y cada vez más equipos nos eligen.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./img/carrousel-jeffrey-f-lin-hf97sXTnQ8g-unsplash.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Para todas las edades</h5>
+                  <p>Para que puedan jugarlo jugadores de todas las edades.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./img/carrousel-hal-gatewood-AzDHa9F9uBY-unsplash.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>¿Te lo vas a perder?</h5>
+                  <p></p>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        </div>
+        <div class="cuerpo__seccion col-12 col-md-4" id="sedes">
             <a href="./pages/sedes.html"><img src="./img/sedes.png" alt="sedes" class="imagen"></a>
             <p class="cuerpo__texto">Nuestras sedes</p>
         </div>
-        <div class="cuerpo__seccion" id="torneo">
+        <div class="cuerpo__seccion col-12 col-md-4" id="torneo">
             <a href="./pages/torneo.html"><img src="./img/torneo.png" alt="torneo" class="imagen"></a>
             <p class="cuerpo__texto">El torneo</p>
         </div>
-        <div class="cuerpo__seccion" id="quierojugar">
+        <div class="cuerpo__seccion col-12 col-md-4" id="quierojugar">
             <a href="./pages/quiero_jugar.html"><img src="./img/quiero jugar.png" alt="¿Estás listo?" class="imagen"></a>
             <p class="cuerpo__texto">¿Estás listo?</p>
         </div>
