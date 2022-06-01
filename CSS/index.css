@@ -312,6 +312,7 @@ main{
     border-width: 2px; */
     background-image: url(../img/alex-azabache-1cPWeb3Ud30-unsplash.png);
     background-size: cover;
+    flex: 1 1 50%;
 
     }
 
@@ -326,6 +327,7 @@ main{
     border-width: 2px; */
     background-image: url(../img/benjamin-gremler-ZtTkB3LmlNw-unsplash.png);
     background-size: cover;
+    flex: 1 1 50%;
 
 }
 
@@ -340,6 +342,7 @@ main{
     border-width: 2px; */
     background-image: url(../img/vienna-reyes-qCrKTET_09o-unsplash.png);
     background-size: cover;
+    flex: 1 1 50%;
 
 }
 
@@ -354,11 +357,12 @@ main{
     border-width: 2px; */
     background-image: url(../img/anna-sullivan-KnE8rsBZq8U-unsplash.png);
     background-size: cover;
+    flex: 1 1 50%;
 
 }
 .sedes__foto{
     width: 27rem;
-    filter: drop-shadow(0 0 7px rgba(0, 0, 0, 0.741));
+    filter: drop-shadow(0 0 7px rgba(0, 0, 0, 0.741)); 
 }
 .sedes__text{
     filter: drop-shadow(1px 1px 1px black);
@@ -366,15 +370,17 @@ main{
 
 @media screen and (max-width: 900px) {
     .afterimage__grid{
-        display: grid;
-        grid-template-rows: 70px 330px 330px 330px 330px;
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 90%;
+        /* grid-template-rows: 70px 330px 330px 330px 330px;
         grid-template-columns: 1fr;
         grid-template-areas: 
         "frase"
         "capital"
         "zonanorte"
         "zonasur"
-        "oeste";
+        "oeste"; */
         gap:4rem;
     }
     main{
@@ -383,6 +389,10 @@ main{
     }
     .title__sedes{
         justify-self: center;
+    }
+    
+    .sedes__foto{
+        width: 15rem;
     }
 }
 
