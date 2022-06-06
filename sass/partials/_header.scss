@@ -1,0 +1,60 @@
+
+/***********HEADER**********/
+
+.header {
+    background-image: url(../img/Rectangle1.png);
+    background-size: cover;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    .logo{
+        margin-left: 50px;
+        margin-top: 20px;
+        width: 140px;
+    }
+    .line{
+        margin: 0 auto;
+        width: 100%;
+        margin-top: 10px;
+    }
+    nav{
+        font-size: var(--small-text);
+        padding-right: 6em;
+        div{
+            div{
+                ul{
+                    li{
+                        a{
+                            color: $primary-color;
+                            &:hover{
+                                color: $secondary-color !important;
+                                border-bottom-color: $secondary-color;
+                                border-bottom-width: 2px;
+                                border-bottom-style: solid;
+                                padding-bottom: 0rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+    }
+       
+}   
+
+
+@media screen and (max-width: 900px){
+    .header {
+        align-items: center;
+        .logo{
+            margin-left: 0px;
+            margin-top: 10px;
+            width: 140px;
+        }
+    }
+    
+}
+
+/***********FIN HEADER**********/

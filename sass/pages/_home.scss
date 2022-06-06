@@ -1,0 +1,82 @@
+
+
+
+/***********INICIO**********/
+
+.home{
+    background-image: url(../img/Frame2s.jpg);
+    background-size: cover;
+    height: 1000px;
+    margin: 0 auto;
+    background-position: center;
+}
+
+main{
+    .cuerpo{
+        &__frase{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            color: $primary-color;
+            &__title{
+                font-size: $large-text;
+            }
+            &__text{
+                font-size: $medium-text;
+            }
+        }
+    }
+    .cuerpo__enlaces{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        .cuerpo__seccion{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: $medium-text;
+            color: $primary-color;
+            padding-top: 3.5rem;
+            img{
+                width: 250px;
+                border-color: $back-color;
+                border-style: solid;
+                border-width: 4px;
+                border-radius: 127px;
+                &:hover{
+                    border-color: $secondary-color;
+                    border-style: solid;
+                    border-width: 4px;
+                    border-radius: 127px;
+                }
+
+            }
+        }
+    }
+    
+}
+
+
+@media screen and (max-width: 900px) {
+    main{
+        .cuerpo{
+            &__frase{
+                &__title{
+                    font-size: $medium-text;
+                }
+                &__text{
+                    font-size: $small-text;
+                }
+            }
+        }
+        .cuerpo__enlaces {
+            display: flex;
+            flex-direction: column;
+            margin-top: 4rem;
+         }
+    }
+}
+
+/***********FIN INICIO**********/

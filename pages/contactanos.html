@@ -9,6 +9,7 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
+<body class="body">
 <section class="contactanos">
     <header class="header">
         <img src="../img/SvgjsG1850.svg" alt="logo" class="logo">
@@ -39,22 +40,27 @@
               </div>
             </div>
         </nav>
-</header>
-</section>   
-<body class="body">
-<section class="afterimage">
-    <h2>¿Tenés dudas?</h2>
-    <p>Envianos tu consulta y un miembro de nuestro staff te contactará para ayudarte</p>
-    <div class="formulario">
-        <form action="contactanos.js" method="post"> 
-            <input class="formulario__botones" type="text" name="nombre" placeholder="Tu nombre"> <br><br>
-            <input class="formulario__botones" type="email" name="mail" placeholder="Tu mail"> <br><br>
-            <textarea class="formulario__botones" name="consulta" cols="30" rows="10" placeholder="Tu consulta"></textarea><br><br>
-            <input class="formulario__botones" type="submit" value="Enviar" class="enviar">   
-            <p class="formulario__texto">Te vamos a contactar a la brevedad.</p>
-        </form>
+  </header>
+</section> 
+<main class="container-md">  
+  <section class="afterimage mb-5">
+    <h2 class="fs-1">¿Tenés dudas?</h2>
+    <p class="fs-3 mb-5">Envianos tu consulta y un miembro de nuestro staff te contactará para ayudarte</p>
+    <div class="row justify-content-center">
+      <form class="col-xs-8 col-lg-6">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Tu mail:</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-4">
+          <label for="exampleInputPassword1" class="form-label">Tu consulta:</label>
+          <textarea class="form-control" id="floatingTextarea"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
     </div>
-</section>
+  </section>
+</main>
 <footer class="footer">
     <div class="footer__datos">
         <p class="footer__datos__contacto"> 442 FUTBOL</p>

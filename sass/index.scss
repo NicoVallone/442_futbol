@@ -1,0 +1,17 @@
+
+// MISC *****************************
+@import './misc/variables';
+@import './misc/normalize';
+@import './misc/animations';
+
+// PARCIALES**************************
+@import './partials/header';
+@import './partials/footer';
+
+// PAGINAS ************************************************
+@import './pages/home';
+@import './pages/sedes';
+@import './pages/torneo';
+@import './pages/quiero_jugar';
+
+@import './pages/contactanos';

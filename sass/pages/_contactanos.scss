@@ -1,0 +1,33 @@
+/***********CONTACTANOS**********/
+
+
+.contactanos{
+    background-image: url(../img/Frame4.jpg);
+    background-size: cover;
+    height: 1000px;
+    background-position: center;
+}
+
+.formulario {
+    display: inline-block;
+    border-width: 5px;
+    border-color: aliceblue;
+    border-style: solid;
+    padding: 15px;
+    margin-top: 30px;
+    margin-left: 550px;
+    margin-bottom: 50px;
+    color: $primary-color;
+}
+
+.formulario__botones {
+    color: black;
+    width: 240px;
+    color: $primary-color;
+}
+.formulario__texto{
+    margin-top: 15px;
+    color: $primary-color;
+}
+
+/***********FIN CONTACTANOS**********/

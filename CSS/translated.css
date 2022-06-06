@@ -1,4 +1,12 @@
 /***********VARIABLES**********/
+:root {
+  --primary-color: #f5f1e3;
+  --secondary-color: #1b9aaa;
+  --back-color: black;
+  --medium-text: 1.8em;
+  --large-text:2.5em;
+  --small-text:1.4em; }
+
 /***********FIN VARIABLES**********/
 /***********NORMALIZACION**********/
 * {
@@ -10,16 +18,16 @@ html {
   font-size: 65.5%; }
 
 .body {
-  background-color: black; }
+  background-color: var(--back-color); }
 
 main {
   margin: 0 auto;
   max-width: 1380px; }
 
 .afterimage {
-  height: 400px;
+  height: 700px;
   display: block;
-  color: #f5f1e3; }
+  color: var(--primary-color); }
 
 /***********FIN NORMALIZACION**********/
 /***********HEADER**********/
@@ -41,10 +49,10 @@ main {
     font-size: var(--small-text);
     padding-right: 6em; }
     .header nav div div ul li a {
-      color: #f5f1e3; }
+      color: var(--primary-color); }
       .header nav div div ul li a:hover {
-        color: #1b9aaa !important;
-        border-bottom-color: #1b9aaa;
+        color: var(--secondary-color) !important;
+        border-bottom-color: var(--secondary-color);
         border-bottom-width: 2px;
         border-bottom-style: solid;
         padding-bottom: 0rem; }
@@ -65,8 +73,8 @@ main {
   flex-wrap: nowrap;
   justify-content: space-between;
   margin: 20px;
-  font-size: 1.4em;
-  color: #f5f1e3; }
+  font-size: var(--small-text);
+  color: var(--primary-color); }
   .footer__datos {
     display: flex;
     flex-direction: column;
@@ -83,14 +91,10 @@ main {
       border-bottom-style: solid;
       padding-bottom: 0rem; }
     .footer__redes a:hover {
-      border-bottom-color: #1b9aaa;
+      border-bottom-color: var(--secondary-color);
       border-bottom-width: 2px;
       border-bottom-style: solid;
       padding-bottom: 0rem; }
-
-@media screen and (max-width: 500px) {
-  .footer {
-    font-size: 0.8rem; } }
 
 /***********FIN FOOTER**********/
 /***********INICIO**********/
@@ -107,11 +111,11 @@ main .cuerpo__frase {
   align-items: flex-start;
   gap: 1rem;
   margin-bottom: 3rem;
-  color: #f5f1e3; }
+  color: var(--primary-color); }
   main .cuerpo__frase__title {
-    font-size: 2.5em; }
+    font-size: var(--large-text); }
   main .cuerpo__frase__text {
-    font-size: 1.8em; }
+    font-size: var(--medium-text); }
 
 main .cuerpo__enlaces {
   display: flex;
@@ -121,30 +125,30 @@ main .cuerpo__enlaces {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 1.8em;
-    color: #f5f1e3;
+    font-size: var(--medium-text);
+    color: var(--primary-color);
     padding-top: 3.5rem; }
     main .cuerpo__enlaces .cuerpo__seccion img {
       width: 250px;
-      border-color: black;
+      border-color: var(--back-color);
       border-style: solid;
       border-width: 4px;
       border-radius: 127px; }
       main .cuerpo__enlaces .cuerpo__seccion img:hover {
-        border-color: #1b9aaa;
+        border-color: var(--secondary-color);
         border-style: solid;
         border-width: 4px;
         border-radius: 127px; }
 
 @media screen and (max-width: 900px) {
   main .cuerpo__frase__title {
-    font-size: 1.8em; }
+    font-size: var(--medium-text); }
   main .cuerpo__frase__text {
-    font-size: 1.4em; }
+    font-size: var(--small-text); }
   main .cuerpo__enlaces {
     display: flex;
     flex-direction: column;
-    margin-top: 4rem; } }
+    margin-top: 3rem; } }
 
 /***********FIN INICIO**********/
 /***********FIN SEDES**********/
@@ -155,8 +159,8 @@ main .cuerpo__enlaces {
   background-position: center; }
 
 .title__sedes {
-  font-size: 2.5em;
-  color: #f5f1e3; }
+  font-size: var(--large-text);
+  color: var(--primary-color); }
 
 .afterimage__grid {
   display: grid;
@@ -166,7 +170,7 @@ main .cuerpo__enlaces {
   gap: 2rem;
   margin-top: 3rem;
   margin-bottom: 3rem;
-  color: #f5f1e3; }
+  color: var(--primary-color); }
 
 #capital {
   grid-area: capital; }
@@ -273,7 +277,7 @@ main .cuerpo__enlaces {
   background-position: center; }
 
 #torneo__estadisticas {
-  color: #f5f1e3; }
+  color: var(--primary-color); }
 
 .afterimage__torneo {
   display: grid;
@@ -281,12 +285,12 @@ main .cuerpo__enlaces {
   grid-template-rows: 100px 1fr 1fr;
   grid-template-areas: "titulo titulo" "posiciones goleadores" "fixture fixture";
   gap: 2rem;
-  color: #f5f1e3; }
+  color: var(--primary-color); }
 
 #titulo {
   grid-area: titulo;
   display: inline-block;
-  font-size: 2.5em; }
+  font-size: var(--large-text); }
 
 #posiciones {
   grid-area: posiciones; }
@@ -347,7 +351,7 @@ main .cuerpo__enlaces {
   grid-area: fecha9; }
 
 .torneo__title {
-  font-size: 1.8em;
+  font-size: var(--medium-text);
   align-self: start;
   justify-self: start; }
 
@@ -379,11 +383,11 @@ main .cuerpo__enlaces {
 .pasos {
   margin-top: 50px;
   margin-left: 10px;
-  color: #f5f1e3; }
+  color: var(--primary-color); }
 
 .pasos__headline {
   margin-bottom: 5px;
-  color: #f5f1e3; }
+  color: var(--primary-color); }
 
 /***********FIN QUIERO JUGAR**********/
 /***********CONTACTANOS**********/
@@ -402,15 +406,15 @@ main .cuerpo__enlaces {
   margin-top: 30px;
   margin-left: 550px;
   margin-bottom: 50px;
-  color: #f5f1e3; }
+  color: var(--primary-color); }
 
 .formulario__botones {
   color: black;
   width: 240px;
-  color: #f5f1e3; }
+  color: var(--primary-color); }
 
 .formulario__texto {
   margin-top: 15px;
-  color: #f5f1e3; }
+  color: var(--primary-color); }
 
 /***********FIN CONTACTANOS**********/

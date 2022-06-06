@@ -42,45 +42,53 @@
         </nav>
 </header>
 </section>   
-<main>
+<main class="container-md">
     <section class="afterimage">
         <article>
             <h2>
                 Anotate siguiendo estos pasos:
             </h2>
         </article>
-        <div class="pasos">
-            <h2 class="pasos__headline">
-                PASO 1
-            </h2>
-            <p>
-                Descargá la planilla desde acá.
-            </p>
-        </div>
-        <div class="pasos">
-            <h2 class="pasos__headline">
-                PASO 2
-            </h2>
-            <p>
-                Llená la planilla con los datos del equipo de los jugadores.
-            </p>
-        </div>
-        <div class="pasos">
-            <h2 class="pasos__headline">
-                PASO 3
-            </h2>
-            <p>
-                Cargá la planilla acá.
-            </p>
-        </div>
-        <div class="pasos">
-            <h2 class="pasos__headline">
-                PASO 4
-            </h2>
-            <p>
-                Un miembro de nuestro staff te contactará para finalizar la inscripción.
-            </p>
-        </div>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item bg-black text-light fs-3">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed bg-black text-light fs-1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Primer paso:
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body row">
+                    <h3 class="col">
+                    Descargá la plantilla desde acá
+                    </h3>
+                    <button type="button" class="btn btn-primary col">Descargar</button>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item bg-black text-light fs-3">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed bg-black text-light fs-1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                 Segundo paso:
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Cargá los datos del equipo y de cada uno de los jugadores.</div>
+              </div>
+            </div>
+            <div class="accordion-item bg-black text-light fs-3">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed bg-black text-light fs-1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Tercer paso:
+                </button>
+              </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body row">
+                    <h3 class="col">
+                        Cargá la plantilla acá y listo. Un miembro de nuestro staff te contactará para coordinar y finalizar la inscripción.
+                    </h3>
+                    <button type="button" class="btn btn-primary col">Subir</button>
+                </div>
+            </div>
     </section>
 </main>
 <footer class="footer">
