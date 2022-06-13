@@ -9,11 +9,6 @@
     height: 1000px;
     background-position: center;
 }
-.title__sedes{
-    font-size: $large-text;
-    color: $primary-color;
-}
-
 
 .afterimage__grid{
     display: grid;
@@ -27,117 +22,111 @@
     margin-top: 3rem;
     margin-bottom: 3rem;
     color: $primary-color;
-}
-#capital{
-    grid-area: capital;
-}
-#zonasur{
-    grid-area: zonasur;
-}
-#zonanorte{
-    grid-area: zonanorte;
-}
-#oeste{
-    grid-area: oeste;
-}
-#frase__sedes{
-    grid-area: frase;
-}
-
-
-.grid__item__capital{
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-evenly;
-    align-items: center;
-    /* border-style: solid;
-    border-color: var(--primary-color);
-    border-width: 2px; */
-    background-image: url(../img/alex-azabache-1cPWeb3Ud30-unsplash.png);
-    background-size: cover;
-    flex: 1 1 50%;
-
+    .title__sedes{
+        font-size: $large-text;
+        color: $primary-color;
     }
-
-.grid__item__norte{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    align-items: center;
-    /* border-style: solid;
-    border-color: var(--primary-color);
-    border-width: 2px; */
-    background-image: url(../img/benjamin-gremler-ZtTkB3LmlNw-unsplash.png);
-    background-size: cover;
-    flex: 1 1 50%;
-
+    #capital{
+        grid-area: capital;
+    }
+    #zonasur{
+        grid-area: zonasur;
+    }
+    #zonanorte{
+        grid-area: zonanorte;
+    }
+    #oeste{
+        grid-area: oeste;
+    }
+    #frase__sedes{
+        grid-area: frase;
+    }
+      
+    .grid__item{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        align-items: center;
+        background-size: cover;
+        flex: 1 1 50%;
+        &__capital{
+            @extend .grid__item;
+            flex-direction: row-reverse;
+            background-image: url(../img/alex-azabache-1cPWeb3Ud30-unsplash.png);
+        }
+        &__norte{
+            @extend .grid__item;
+            flex-direction: row;
+            background-image: url(../img/benjamin-gremler-ZtTkB3LmlNw-unsplash.png);
+        }
+        &__sur{
+            @extend .grid__item;
+            background-image: url(../img/vienna-reyes-qCrKTET_09o-unsplash.png);
+            flex-direction: row-reverse;
+        }
+        &__oeste{
+            @extend .grid__item;
+            flex-direction: row;
+            background-image: url(../img/anna-sullivan-KnE8rsBZq8U-unsplash.png);
+        }
+    }
 }
 
-.grid__item__sur{
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-evenly;
-    align-items: center;
-    /* border-style: solid;
-    border-color: var(--primary-color);
-    border-width: 2px; */
-    background-image: url(../img/vienna-reyes-qCrKTET_09o-unsplash.png);
-    background-size: cover;
-    flex: 1 1 50%;
-
-}
-
-.grid__item__oeste{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    align-items: center;
-    /* border-style: solid;
-    border-color: var(--primary-color);
-    border-width: 2px; */
-    background-image: url(../img/anna-sullivan-KnE8rsBZq8U-unsplash.png);
-    background-size: cover;
-    flex: 1 1 50%;
-
-}
 .sedes__foto{
     width: 27rem;
     filter: drop-shadow(0 0 7px rgba(0, 0, 0, 0.741)); 
 }
 .sedes__text{
     filter: drop-shadow(1px 1px 1px black);
+    font-size: $small-text;
 }
 
-@media screen and (max-width: 900px) {
-    .afterimage__grid{
-        display: flex;
-        flex-direction: column;
-        flex: 1 1 90%;
-        /* grid-template-rows: 70px 330px 330px 330px 330px;
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "frase"
-        "capital"
-        "zonanorte"
-        "zonasur"
-        "oeste"; */
-        gap:4rem;
-    }
+@media screen and (max-width: 480px) {
     main{
         margin: 0 auto;
         max-width: 80vw;
-    }
-    .title__sedes{
-        justify-self: center;
-    }
-    
+        .afterimage__grid{
+            display: flex;
+            flex-direction: column;
+            flex: 1 1 90%;
+            gap:4rem;
+        }
+        .title__sedes{
+            justify-self: center;
+        }
+        div{
+            .sedes__text{
+                font-size: $tiny-text;
+            }
+        }
+    }    
     .sedes__foto{
         width: 15rem;
     }
 }
+@media screen and (min-width: 481px) and (max-width: 900px) {
+    main{
+        margin: 0 auto;
+        max-width: 80vw;
+        .afterimage__grid{
+            display: flex;
+            flex-direction: column;
+            flex: 1 1 90%;
+            gap:4rem;
+        }
+        .title__sedes{
+            justify-self: center;
+        }
+        div{
+            .sedes__text{
+                font-size: $small-text;
+            }
+        }
+    }    
+    .sedes__foto{
+        width: 20rem;
+    }
+}
+
 
 /***********FIN SEDES**********/

@@ -6,15 +6,25 @@
     background-position: center;
 }
 
-.pasos{
-    margin-top: 50px;
-    margin-left: 10px;
-    color: $primary-color;
+.afterimage__pasos{
+    margin-bottom: 45px;
+    article{
+        .pasos__headline{
+            margin-bottom: 15px;
+            color: $primary-color;
+            font-size: $large-text;
+        }
+
+    }
+
 }
 
-.pasos__headline{
-    margin-bottom: 5px;
-    color: $primary-color;
-}
+
+
+
+
+
+
+
 
 /***********FIN QUIERO JUGAR**********/

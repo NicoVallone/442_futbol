@@ -1,13 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap");
 /***********VARIABLES**********/
 /***********FIN VARIABLES**********/
 /***********NORMALIZACION**********/
 * {
   margin: 0;
   padding: 0;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif; }
+  font-family: 'Roboto Slab', serif; }
 
 html {
-  font-size: 65.5%; }
+  font-size: 65.5%;
+  font-family: 'Roboto Slab', serif; }
 
 .body {
   background-color: black; }
@@ -49,13 +51,15 @@ main {
         border-bottom-style: solid;
         padding-bottom: 0rem; }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   .header {
     align-items: center; }
     .header .logo {
       margin-left: 0px;
       margin-top: 10px;
-      width: 140px; } }
+      width: 140px; }
+  nav div div ul li a {
+    filter: drop-shadow(1px 1px 1px black); } }
 
 /***********FIN HEADER**********/
 /***********FOOTER**********/
@@ -65,12 +69,15 @@ main {
   flex-wrap: nowrap;
   justify-content: space-between;
   margin: 20px;
-  font-size: 1.4em;
+  font-size: 1.4rem;
   color: #f5f1e3; }
   .footer__datos {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; }
+    align-items: flex-start;
+    gap: 5px; }
+    .footer__datos__contacto {
+      margin-bottom: 0px; }
   .footer__redes {
     display: flex;
     flex-direction: row;
@@ -90,7 +97,7 @@ main {
 
 @media screen and (max-width: 500px) {
   .footer {
-    font-size: 0.8rem; } }
+    font-size: 1rem; } }
 
 /***********FIN FOOTER**********/
 /***********INICIO**********/
@@ -109,9 +116,9 @@ main .cuerpo__frase {
   margin-bottom: 3rem;
   color: #f5f1e3; }
   main .cuerpo__frase__title {
-    font-size: 2.5em; }
+    font-size: 2.5rem; }
   main .cuerpo__frase__text {
-    font-size: 1.8em; }
+    font-size: 1.8rem; }
 
 main .cuerpo__enlaces {
   display: flex;
@@ -121,7 +128,7 @@ main .cuerpo__enlaces {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 1.8em;
+    font-size: 1.8rem;
     color: #f5f1e3;
     padding-top: 3.5rem; }
     main .cuerpo__enlaces .cuerpo__seccion img {
@@ -138,9 +145,9 @@ main .cuerpo__enlaces {
 
 @media screen and (max-width: 900px) {
   main .cuerpo__frase__title {
-    font-size: 1.8em; }
+    font-size: 1.8rem; }
   main .cuerpo__frase__text {
-    font-size: 1.4em; }
+    font-size: 1.4rem; }
   main .cuerpo__enlaces {
     display: flex;
     flex-direction: column;
@@ -154,10 +161,6 @@ main .cuerpo__enlaces {
   height: 1000px;
   background-position: center; }
 
-.title__sedes {
-  font-size: 2.5em;
-  color: #f5f1e3; }
-
 .afterimage__grid {
   display: grid;
   grid-template-areas: "frase frase" "capital zonanorte" "zonasur oeste";
@@ -167,102 +170,78 @@ main .cuerpo__enlaces {
   margin-top: 3rem;
   margin-bottom: 3rem;
   color: #f5f1e3; }
-
-#capital {
-  grid-area: capital; }
-
-#zonasur {
-  grid-area: zonasur; }
-
-#zonanorte {
-  grid-area: zonanorte; }
-
-#oeste {
-  grid-area: oeste; }
-
-#frase__sedes {
-  grid-area: frase; }
-
-.grid__item__capital {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  justify-content: space-evenly;
-  align-items: center;
-  /* border-style: solid;
-    border-color: var(--primary-color);
-    border-width: 2px; */
-  background-image: url(../img/alex-azabache-1cPWeb3Ud30-unsplash.png);
-  background-size: cover;
-  flex: 1 1 50%; }
-
-.grid__item__norte {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-  align-items: center;
-  /* border-style: solid;
-    border-color: var(--primary-color);
-    border-width: 2px; */
-  background-image: url(../img/benjamin-gremler-ZtTkB3LmlNw-unsplash.png);
-  background-size: cover;
-  flex: 1 1 50%; }
-
-.grid__item__sur {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  justify-content: space-evenly;
-  align-items: center;
-  /* border-style: solid;
-    border-color: var(--primary-color);
-    border-width: 2px; */
-  background-image: url(../img/vienna-reyes-qCrKTET_09o-unsplash.png);
-  background-size: cover;
-  flex: 1 1 50%; }
-
-.grid__item__oeste {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-  align-items: center;
-  /* border-style: solid;
-    border-color: var(--primary-color);
-    border-width: 2px; */
-  background-image: url(../img/anna-sullivan-KnE8rsBZq8U-unsplash.png);
-  background-size: cover;
-  flex: 1 1 50%; }
+  .afterimage__grid .title__sedes {
+    font-size: 2.5rem;
+    color: #f5f1e3; }
+  .afterimage__grid #capital {
+    grid-area: capital; }
+  .afterimage__grid #zonasur {
+    grid-area: zonasur; }
+  .afterimage__grid #zonanorte {
+    grid-area: zonanorte; }
+  .afterimage__grid #oeste {
+    grid-area: oeste; }
+  .afterimage__grid #frase__sedes {
+    grid-area: frase; }
+  .afterimage__grid .grid__item, .afterimage__grid .grid__item__capital, .afterimage__grid .grid__item__norte, .afterimage__grid .grid__item__sur, .afterimage__grid .grid__item__oeste {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    align-items: center;
+    background-size: cover;
+    flex: 1 1 50%; }
+    .afterimage__grid .grid__item__capital {
+      flex-direction: row-reverse;
+      background-image: url(../img/alex-azabache-1cPWeb3Ud30-unsplash.png); }
+    .afterimage__grid .grid__item__norte {
+      flex-direction: row;
+      background-image: url(../img/benjamin-gremler-ZtTkB3LmlNw-unsplash.png); }
+    .afterimage__grid .grid__item__sur {
+      background-image: url(../img/vienna-reyes-qCrKTET_09o-unsplash.png);
+      flex-direction: row-reverse; }
+    .afterimage__grid .grid__item__oeste {
+      flex-direction: row;
+      background-image: url(../img/anna-sullivan-KnE8rsBZq8U-unsplash.png); }
 
 .sedes__foto {
   width: 27rem;
   filter: drop-shadow(0 0 7px rgba(0, 0, 0, 0.741)); }
 
 .sedes__text {
-  filter: drop-shadow(1px 1px 1px black); }
+  filter: drop-shadow(1px 1px 1px black);
+  font-size: 1.4rem; }
 
-@media screen and (max-width: 900px) {
-  .afterimage__grid {
-    display: flex;
-    flex-direction: column;
-    flex: 1 1 90%;
-    /* grid-template-rows: 70px 330px 330px 330px 330px;
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "frase"
-        "capital"
-        "zonanorte"
-        "zonasur"
-        "oeste"; */
-    gap: 4rem; }
+@media screen and (max-width: 480px) {
   main {
     margin: 0 auto;
     max-width: 80vw; }
-  .title__sedes {
-    justify-self: center; }
+    main .afterimage__grid {
+      display: flex;
+      flex-direction: column;
+      flex: 1 1 90%;
+      gap: 4rem; }
+    main .title__sedes {
+      justify-self: center; }
+    main div .sedes__text {
+      font-size: 1rem; }
   .sedes__foto {
     width: 15rem; } }
+
+@media screen and (min-width: 481px) and (max-width: 900px) {
+  main {
+    margin: 0 auto;
+    max-width: 80vw; }
+    main .afterimage__grid {
+      display: flex;
+      flex-direction: column;
+      flex: 1 1 90%;
+      gap: 4rem; }
+    main .title__sedes {
+      justify-self: center; }
+    main div .sedes__text {
+      font-size: 1.4rem; }
+  .sedes__foto {
+    width: 20rem; } }
 
 /***********FIN SEDES**********/
 /***********TORNEO**********/
@@ -272,101 +251,12 @@ main .cuerpo__enlaces {
   height: 1100px;
   background-position: center; }
 
-#torneo__estadisticas {
-  color: #f5f1e3; }
-
-.afterimage__torneo {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 100px 1fr 1fr;
-  grid-template-areas: "titulo titulo" "posiciones goleadores" "fixture fixture";
-  gap: 2rem;
-  color: #f5f1e3; }
-
-#titulo {
-  grid-area: titulo;
-  display: inline-block;
-  font-size: 2.5em; }
-
-#posiciones {
-  grid-area: posiciones; }
-
-#goleadores {
-  grid-area: goleadores; }
-
-#fixture {
-  grid-area: fixture; }
-
-.posiciones {
-  border-style: solid;
-  border-width: 2px;
-  border-color: aliceblue;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 3rem;
-  gap: 0.5rem;
-  justify-content: space-evenly; }
-
-.goleadores {
-  border-style: solid;
-  border-width: 2px;
-  border-color: aliceblue;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 3rem;
-  gap: 0.5rem; }
-
-.fixture {
-  border-style: solid;
-  border-width: 2px;
-  border-color: aliceblue;
-  display: grid;
-  grid-template-columns: repeat 4, 25%;
-  grid-template-rows: 100px 1fr;
-  grid-template-areas: "titulo none none none" "fecha6 fecha7 fecha8 fecha9";
-  justify-items: center;
-  align-items: center;
-  gap: 3rem; }
-
-#fixture__title {
-  grid-area: titulo; }
-
-#fecha6 {
-  grid-area: fecha6; }
-
-#fecha7 {
-  grid-area: fecha7; }
-
-#fecha8 {
-  grid-area: fecha8; }
-
-#fecha9 {
-  grid-area: fecha9; }
-
-.torneo__title {
-  font-size: 1.8em;
+.afterimage__torneo section article #titulo {
+  font-size: 2.5rem;
+  color: #f5f1e3;
   align-self: start;
-  justify-self: start; }
-
-.equipo {
-  display: flex;
-  justify-content: start; }
-
-@media screen and (max-width: 900px) {
-  .afterimage__torneo {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 100px 1fr 1fr 1fr;
-    grid-template-areas: "titulo" "posiciones" "goleadores" "fixture"; }
-  .fixture {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100px 1fr 1fr;
-    grid-template-areas: "titulo titulo" "fecha6 fecha7" "fecha8 fecha9";
-    padding-bottom: 2rem; } }
+  justify-self: start;
+  margin-bottom: 25px; }
 
 /***********FIN TORNEO**********/
 /***********QUIERO JUGAR**********/
@@ -376,14 +266,12 @@ main .cuerpo__enlaces {
   height: 1100px;
   background-position: center; }
 
-.pasos {
-  margin-top: 50px;
-  margin-left: 10px;
-  color: #f5f1e3; }
-
-.pasos__headline {
-  margin-bottom: 5px;
-  color: #f5f1e3; }
+.afterimage__pasos {
+  margin-bottom: 45px; }
+  .afterimage__pasos article .pasos__headline {
+    margin-bottom: 15px;
+    color: #f5f1e3;
+    font-size: 2.5rem; }
 
 /***********FIN QUIERO JUGAR**********/
 /***********CONTACTANOS**********/
@@ -393,24 +281,26 @@ main .cuerpo__enlaces {
   height: 1000px;
   background-position: center; }
 
-.formulario {
-  display: inline-block;
-  border-width: 5px;
-  border-color: aliceblue;
-  border-style: solid;
-  padding: 15px;
-  margin-top: 30px;
-  margin-left: 550px;
-  margin-bottom: 50px;
+main .afterimage__contactanos h2 {
+  font-size: 2.5rem;
   color: #f5f1e3; }
 
-.formulario__botones {
-  color: black;
-  width: 240px;
+main .afterimage__contactanos p {
+  font-size: 1.8rem;
   color: #f5f1e3; }
 
-.formulario__texto {
-  margin-top: 15px;
-  color: #f5f1e3; }
+main .afterimage__contactanos div form div label {
+  color: #f5f1e3;
+  font-size: 1.4rem; }
+
+main .afterimage__contactanos div form div input {
+  width: 100%; }
+
+main .afterimage__contactanos div form div textarea {
+  height: 200px; }
+
+@media screen and (max-width: 600px) {
+  .afterimage__contactanos div form div input {
+    width: 100%; } }
 
 /***********FIN CONTACTANOS**********/

@@ -33,9 +33,7 @@ main{
         flex-direction: row;
         justify-content: space-evenly;
         .cuerpo__seccion{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            @include home_flex(flex, column, center);
             font-size: $medium-text;
             color: $primary-color;
             padding-top: 3.5rem;

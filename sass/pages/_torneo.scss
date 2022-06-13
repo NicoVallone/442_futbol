@@ -7,125 +7,20 @@
     background-position: center;
 }
 
-#torneo__estadisticas{
-    color: $primary-color;
-}
-
 .afterimage__torneo{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100px 1fr 1fr;
-    grid-template-areas:
-    "titulo titulo"
-    "posiciones goleadores"
-    "fixture fixture";
-    gap: 2rem;
-    color: $primary-color;
-}
-
-#titulo{
-    grid-area: titulo;
-    display: inline-block;
-    font-size: $large-text;
-} 
-
-#posiciones{
-    grid-area: posiciones;
-}
-
-#goleadores{
-    grid-area: goleadores;
-}
-
-#fixture{
-    grid-area: fixture;
-}
-
-.posiciones{
-    border-style: solid;
-    border-width: 2px;
-    border-color: aliceblue;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 3rem;
-    gap: 0.5rem;
-    justify-content: space-evenly;
-
-}
-.goleadores{
-    border-style: solid;
-    border-width: 2px;
-    border-color: aliceblue;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 3rem;
-    gap: 0.5rem;
-}
-.fixture{
-    border-style: solid;
-    border-width: 2px;
-    border-color: aliceblue;
-    display: grid;
-    grid-template-columns: repeat (4, 25%);
-    grid-template-rows: 100px 1fr;
-    grid-template-areas:
-    "titulo none none none"
-    "fecha6 fecha7 fecha8 fecha9";
-    justify-items: center;
-    align-items: center;
-    gap: 3rem;
-}
-#fixture__title{
-    grid-area: titulo;
-}
-#fecha6{
-    grid-area: fecha6;
-}
-#fecha7{
-    grid-area: fecha7;
-}
-#fecha8{
-    grid-area: fecha8;
-}
-
-#fecha9{
-    grid-area: fecha9;
-}
-
-.torneo__title{
-    font-size: $medium-text;
-    align-self: start;
-    justify-self: start;
-}
-.equipo{
-    display: flex;
-    justify-content: start;
-}
-
-@media screen and (max-width: 900px){
-    .afterimage__torneo{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 100px 1fr 1fr 1fr;
-        grid-template-areas:
-        "titulo"
-        "posiciones"
-        "goleadores"
-        "fixture";
-    }   
-    .fixture{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 100px 1fr 1fr;
-        grid-template-areas:
-        "titulo titulo"
-        "fecha6 fecha7"
-        "fecha8 fecha9";
-       padding-bottom: 2rem;
+    section{
+        article{
+            #titulo{
+                font-size: $large-text;
+                color: $primary-color;
+                align-self: start;
+                justify-self: start;
+                margin-bottom: 25px;
+            }
+        }
     }
 }
+
+
 
 /***********FIN TORNEO**********/

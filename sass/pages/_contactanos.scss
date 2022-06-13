@@ -8,26 +8,49 @@
     background-position: center;
 }
 
-.formulario {
-    display: inline-block;
-    border-width: 5px;
-    border-color: aliceblue;
-    border-style: solid;
-    padding: 15px;
-    margin-top: 30px;
-    margin-left: 550px;
-    margin-bottom: 50px;
-    color: $primary-color;
+main{
+    .afterimage__contactanos{
+        h2{
+            font-size: $large-text;
+            color: $primary-color;
+        }
+        p{
+            font-size: $medium-text;
+            color: $primary-color;  
+        }
+        div{
+            form{
+                div{
+                    label{
+                        color: $primary-color;
+                        font-size: $small-text;
+                    }
+                    input{
+                        width: 100%;
+                    }
+                    textarea{
+                        height: 200px;
+                    }
+                }
+            }
+        }
+    
+    }
 }
 
-.formulario__botones {
-    color: black;
-    width: 240px;
-    color: $primary-color;
-}
-.formulario__texto{
-    margin-top: 15px;
-    color: $primary-color;
+@media screen and (max-width: 600px) {
+    .afterimage__contactanos{
+        div{
+            form{
+                div{
+                    input{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    
+    }
 }
 
 /***********FIN CONTACTANOS**********/
