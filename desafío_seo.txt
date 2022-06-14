@@ -1,0 +1,9 @@
+El extend lo agregué en la página SEDES.
+Agregué un mixin en el inicio.
+Le agregué las keywords a todos los archivos
+Le puse descripción distinta para cada uno. 
+Cada página tiene su title y favicon.
+A la pagina sedes le armé un map para ponerle bordes de colores a cada una de las sedes.
+Usé el map-get para agregarle color al botón que tenía en contactos. 
+Estos dos últimos ítems los usé de esta manera simplemente para agregarlos y entregar el desafío demostrando que se usarlos, no los voy a dejar así para la entrega del proyecto ya que no está sumando mucho.
+

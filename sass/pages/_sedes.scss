@@ -81,6 +81,20 @@
     font-size: $small-text;
 }
 
+$sedes: (
+    norte: red,
+    sur: blue,
+    capital: green,
+    oeste: gray,
+);
+
+@each $sede, $color in $sedes {
+    .grid__item__#{$sede}{
+        border: (3px solid $color);
+            }
+    
+}
+
 @media screen and (max-width: 480px) {
     main{
         margin: 0 auto;
