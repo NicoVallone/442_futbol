@@ -85,7 +85,7 @@ $sedes: (
     norte: red,
     sur: blue,
     capital: green,
-    oeste: gray,
+    oeste: rgb(0, 229, 255),
 );
 
 @each $sede, $color in $sedes {

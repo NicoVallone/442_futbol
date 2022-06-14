@@ -221,7 +221,7 @@ main .cuerpo__enlaces {
   border: 3px solid green; }
 
 .grid__item__oeste {
-  border: 3px solid gray; }
+  border: 3px solid #00e5ff; }
 
 @media screen and (max-width: 480px) {
   main {
