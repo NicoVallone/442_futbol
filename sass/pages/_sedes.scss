@@ -73,27 +73,22 @@
 }
 
 .sedes__foto{
-    width: 27rem;
-    filter: drop-shadow(0 0 7px rgba(0, 0, 0, 0.741)); 
+    img{
+        width: 27rem;
+        filter: drop-shadow(0 0 7px rgba(0, 0, 0, 0.741));
+        transition: linear 0.2s;
+        &:hover{
+            width: 28rem;
+        } 
+    }
+    
+    
 }
 .sedes__text{
     filter: drop-shadow(1px 1px 1px black);
     font-size: $small-text;
 }
 
-$sedes: (
-    norte: red,
-    sur: blue,
-    capital: green,
-    oeste: rgb(0, 229, 255),
-);
-
-@each $sede, $color in $sedes {
-    .grid__item__#{$sede}{
-        border: (3px solid $color);
-            }
-    
-}
 
 @media screen and (max-width: 480px) {
     main{

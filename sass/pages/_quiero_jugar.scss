@@ -19,7 +19,21 @@
 
 }
 
+.carousel-inner{
+    div{
+        div{
+            filter: drop-shadow(1px 1px 1px black);
+            h3{
+                font-size: $medium-text;
+            }
+            p{
+                font-size: $small-text;
+            }
+        }
+    }
 
+
+}
 
 
 

@@ -203,25 +203,16 @@ main .cuerpo__enlaces {
       flex-direction: row;
       background-image: url(../img/anna-sullivan-KnE8rsBZq8U-unsplash.png); }
 
-.sedes__foto {
+.sedes__foto img {
   width: 27rem;
-  filter: drop-shadow(0 0 7px rgba(0, 0, 0, 0.741)); }
+  filter: drop-shadow(0 0 7px rgba(0, 0, 0, 0.741));
+  transition: linear 0.2s; }
+  .sedes__foto img:hover {
+    width: 28rem; }
 
 .sedes__text {
   filter: drop-shadow(1px 1px 1px black);
   font-size: 1.4rem; }
-
-.grid__item__norte {
-  border: 3px solid red; }
-
-.grid__item__sur {
-  border: 3px solid blue; }
-
-.grid__item__capital {
-  border: 3px solid green; }
-
-.grid__item__oeste {
-  border: 3px solid #00e5ff; }
 
 @media screen and (max-width: 480px) {
   main {
@@ -285,6 +276,13 @@ main .cuerpo__enlaces {
     color: #f5f1e3;
     font-size: 2.5rem; }
 
+.carousel-inner div div {
+  filter: drop-shadow(1px 1px 1px black); }
+  .carousel-inner div div h3 {
+    font-size: 1.8rem; }
+  .carousel-inner div div p {
+    font-size: 1.4rem; }
+
 /***********FIN QUIERO JUGAR**********/
 /***********CONTACTANOS**********/
 .contactanos {
@@ -300,9 +298,6 @@ main .afterimage__contactanos h2 {
 main .afterimage__contactanos p {
   font-size: 1.8rem;
   color: #f5f1e3; }
-
-main .afterimage__contactanos div form button {
-  background: red; }
 
 main .afterimage__contactanos div form div label {
   color: #f5f1e3;
