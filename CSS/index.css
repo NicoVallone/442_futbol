@@ -203,12 +203,13 @@ main .cuerpo__enlaces {
       flex-direction: row;
       background-image: url(../img/anna-sullivan-KnE8rsBZq8U-unsplash.png); }
 
-.sedes__foto img {
-  width: 27rem;
-  filter: drop-shadow(0 0 7px rgba(0, 0, 0, 0.741));
-  transition: linear 0.2s; }
-  .sedes__foto img:hover {
-    width: 28rem; }
+.sedes__foto {
+  width: 27rem; }
+  .sedes__foto img {
+    filter: drop-shadow(0 0 7px rgba(0, 0, 0, 0.741));
+    transition: linear 0.2s; }
+    .sedes__foto img:hover {
+      width: 28rem; }
 
 .sedes__text {
   filter: drop-shadow(1px 1px 1px black);
@@ -244,7 +245,12 @@ main .cuerpo__enlaces {
     main div .sedes__text {
       font-size: 1.4rem; }
   .sedes__foto {
-    width: 20rem; } }
+    width: 20rem; }
+    .sedes__foto img {
+      filter: drop-shadow(0 0 7px rgba(0, 0, 0, 0.741));
+      transition: linear 0.2s; }
+      .sedes__foto img:hover {
+        width: 21rem; } }
 
 /***********FIN SEDES**********/
 /***********TORNEO**********/

@@ -73,8 +73,8 @@
 }
 
 .sedes__foto{
+    width: 27rem;
     img{
-        width: 27rem;
         filter: drop-shadow(0 0 7px rgba(0, 0, 0, 0.741));
         transition: linear 0.2s;
         &:hover{
@@ -134,6 +134,13 @@
     }    
     .sedes__foto{
         width: 20rem;
+        img{
+            filter: drop-shadow(0 0 7px rgba(0, 0, 0, 0.741));
+            transition: linear 0.2s;
+            &:hover{
+                width: 21rem;
+            } 
+        }
     }
 }
 
