@@ -111,6 +111,13 @@
     }    
     .sedes__foto{
         width: 15rem;
+        img{
+            filter: drop-shadow(0 0 7px rgba(0, 0, 0, 0.741));
+            transition: linear 0.2s;
+            &:hover{
+                width: 16rem;
+            } 
+        }
     }
 }
 @media screen and (min-width: 481px) and (max-width: 900px) {

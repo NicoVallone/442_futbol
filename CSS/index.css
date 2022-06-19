@@ -229,7 +229,12 @@ main .cuerpo__enlaces {
     main div .sedes__text {
       font-size: 1rem; }
   .sedes__foto {
-    width: 15rem; } }
+    width: 15rem; }
+    .sedes__foto img {
+      filter: drop-shadow(0 0 7px rgba(0, 0, 0, 0.741));
+      transition: linear 0.2s; }
+      .sedes__foto img:hover {
+        width: 16rem; } }
 
 @media screen and (min-width: 481px) and (max-width: 900px) {
   main {
