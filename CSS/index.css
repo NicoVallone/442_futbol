@@ -108,17 +108,25 @@ main {
   margin: 0 auto;
   background-position: center; }
 
-main .cuerpo__frase {
+main .cuerpo {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 1rem;
-  margin-bottom: 3rem;
-  color: #f5f1e3; }
-  main .cuerpo__frase__title {
-    font-size: 2.5rem; }
-  main .cuerpo__frase__text {
-    font-size: 1.8rem; }
+  flex-direction: row;
+  align-items: center;
+  gap: 4rem;
+  margin-bottom: 6rem; }
+  main .cuerpo__frase {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    color: #f5f1e3; }
+    main .cuerpo__frase__title {
+      font-size: 2.5rem; }
+    main .cuerpo__frase__text {
+      font-size: 1.6rem;
+      text-align: justify; }
+  main .cuerpo div div div img {
+    width: 600px; }
 
 main .cuerpo__enlaces {
   display: flex;
@@ -128,7 +136,7 @@ main .cuerpo__enlaces {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     color: #f5f1e3;
     padding-top: 3.5rem; }
     main .cuerpo__enlaces .cuerpo__seccion img {
@@ -144,10 +152,16 @@ main .cuerpo__enlaces {
         border-radius: 127px; }
 
 @media screen and (max-width: 900px) {
-  main .cuerpo__frase__title {
-    font-size: 1.8rem; }
-  main .cuerpo__frase__text {
-    font-size: 1.4rem; }
+  main .cuerpo {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; }
+    main .cuerpo__frase__title {
+      font-size: 1.6rem; }
+    main .cuerpo__frase__text {
+      font-size: 1.4rem; }
+    main .cuerpo div div div img {
+      max-width: 80vw; }
   main .cuerpo__enlaces {
     display: flex;
     flex-direction: column;
@@ -290,7 +304,7 @@ main .cuerpo__enlaces {
 .carousel-inner div div {
   filter: drop-shadow(1px 1px 1px black); }
   .carousel-inner div div h3 {
-    font-size: 1.8rem; }
+    font-size: 1.6rem; }
   .carousel-inner div div p {
     font-size: 1.4rem; }
 
@@ -307,7 +321,7 @@ main .afterimage__contactanos h2 {
   color: #f5f1e3; }
 
 main .afterimage__contactanos p {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: #f5f1e3; }
 
 main .afterimage__contactanos div form div label {
